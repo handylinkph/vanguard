@@ -1,0 +1,8 @@
+# Netlify build settings (Next.js is auto-detected via the OpenNext adapter).
+# Secrets and Supabase keys are set in the Netlify UI as environment variables — never here.
+[build]
+  command = "npm run build"
+  publish = ".next"
+
+[build.environment]
+  NODE_VERSION = "22"
