@@ -36,3 +36,16 @@ npm install --legacy-peer-deps
 sudo pg_ctlcluster 16 main start   # or any Postgres 16 with postgres/postgres
 npm run verify
 ```
+
+## Staging status (7 Nov 2026, end of day)
+
+- Supabase project "Vanguard" (Singapore): schema + seed applied; owner account created and promoted to platform admin.
+- GitHub: `handylinkph/vanguard` (public), branch `main`, continuous deployment to Netlify.
+- Netlify: `vanguard-ph-staging` on team "Polaris" (free), private (Netlify team login required). Live at https://vanguard-ph-staging.netlify.app
+- Env vars set: NEXT_PUBLIC_SUPABASE_URL, NEXT_PUBLIC_SUPABASE_ANON_KEY, NEXT_PUBLIC_SITE_URL, SUPABASE_SERVICE_ROLE_KEY. ANTHROPIC_API_KEY not set (assistant shows unavailable).
+
+### Next session
+1. Rotate the Supabase secret key (was shared in chat) → update Netlify var → redeploy → delete old key.
+2. Owner walkthrough: household, plan, kit, assessment → add to plan, offline sync, admin console. Fix anything found.
+3. Custom SMTP for auth emails before inviting pilot users.
+4. Small trusted pilot (5–10 people), then content review, privacy notice, optional AI key.
