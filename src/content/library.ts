@@ -1,0 +1,2 @@
+export const LIB_CATEGORIES: Record<string, string> = { guide: "Guides", procedure: "Emergency procedures", checklist: "Checklists", household: "Household", health: "Health & first aid", finance: "Financial", business: "Businesses", school: "Schools", community: "Community" };
+export const SERVICE_CATEGORIES: Record<string, string> = { hotline: "Emergency hotlines", hospital: "Hospitals", clinic: "Clinics & health centres", fire: "Fire stations", police: "Police stations", evacuation: "Evacuation facilities", drrmo: "DRRM offices", other: "Other services" };
